@@ -30,7 +30,7 @@ resource "null_resource" "example5" {
 }
 resource "null_resource" "example6" { 
   provisioner "local-exec" { 
-     command = "man" 
+     command = "ls" 
      interpreter = ["sh", "-c"]    
   } 
 }

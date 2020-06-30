@@ -1,7 +1,9 @@
 provider "aws" {
-region="us-east-1"
+  region="us-east-1"
+  secret_key = "aws-mock-secertkey000"
+  access_key = "aws-mock-accessid000"
   endpoints {
-    ec2 = "http://a2fc46b2ee77811e88434120e0ad2754-799062602.us-east-1.elb.amazonaws.com"
+    ec2 = "http://a2fc46b2ee77811e88434120e0ad2754-799062602.us-east-1.elb.amazonaws.com/"
   }
 }
 

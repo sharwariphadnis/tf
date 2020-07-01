@@ -10,7 +10,7 @@ provider "aws" {
   skip_region_validation = true
   skip_get_ec2_platforms = true
   endpoints {
-    ec2 = "http://localhost:8000/aws-mock/ec2-endpoint/"
+    ec2 = "http://a2fc46b2ee77811e88434120e0ad2754-799062602.us-east-1.elb.amazonaws.com/aws-mock/ec2-endpoint/"
   }
 }
 resource "aws_instance" "machine1" {

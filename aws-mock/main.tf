@@ -1,7 +1,4 @@
 provider "aws" {
-  secret_key = "aws-mock-secertkey000"
-  access_key = "aws-mock-accessid-scaleperf-99877470-0586-46a2-aa77-41de4b0e7101"
-  region = "us-east-1"
   skip_credentials_validation = true
   skip_metadata_api_check     = true
   skip_requesting_account_id  = true

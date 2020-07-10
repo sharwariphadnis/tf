@@ -412,7 +412,8 @@ resource "aws_instance" "mac22hine49" {
 resource "aws_instance" "machi22ne50" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
-}resource "aws_instance" "mach22ine1" {
+}
+resource "aws_instance" "mach22ine1" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
 }

@@ -1,39 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@nisinghvmware 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-nisinghvmware
-/
-nitin
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-nitin/terraform-scale-test-50/main.tf
-@nisinghvmware
-nisinghvmware Create main.tf
-Latest commit f3cafc9 20 hours ago
- History
- 1 contributor
-215 lines (215 sloc)  5.27 KB
-  
-provider "aws" {
+ provider "aws" {
  secret_key = "aws-mock-secertkey000"
  access_key = "aws-mock-accessid000"
  region = "us-east-1"

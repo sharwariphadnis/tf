@@ -1209,7 +1209,4 @@ resource "aws_instance" "machine299" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
 }
-resource "aws_instance" "machine300" {
- ami = "ami-04b9e92b5572fa0d1"
- instance_type = "t2.micro"
-}
+

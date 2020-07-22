@@ -1177,11 +1177,11 @@ resource "aws_instance" "machine291" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
 }
-resource "aws_instance" "machine192" {
+resource "aws_instance" "machine292" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
 }
-resource "aws_instance" "machine193" {
+resource "aws_instance" "machine293" {
  ami = "ami-04b9e92b5572fa0d1"
  instance_type = "t2.micro"
 }

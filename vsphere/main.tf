@@ -2,56 +2,44 @@ provider "vsphere" {
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
-
 variable "vm_name" {
-  default = "vmware-gadagip-test"
+  default = "vmware-test"
 }
-
 data "vsphere_datacenter" "dc" {
-  name = "ESO_PKS_VC01_DC01"
+  name = "CMBU_ES_SCALE_VC02_ATL_DC"
 }
-
 data "vsphere_datastore" "datastore" {
-  name          = "vsanDatastore_cluster01"
+  name          = "vsanDatastore"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
-
 data "vsphere_resource_pool" "pool" {
-  name          = "tango-e2e-vm-pool"
+  name          = "CMBU_ES_SCALE_VC02_ATL_CLUSTER_01/Resources"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
-
 data "vsphere_network" "network" {
-  name          = "ESO_PKS_VC01_VM"
+  name          = "cmbu_es_scale_vc02_vm_privatevlan3003"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
-
 data "vsphere_virtual_machine" "template" {
-  name          = "TestCentos"
+  name          = "WebTinyCentOS65x86"
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
-
 resource "vsphere_virtual_machine" "cloned_virtual_machine" {
   name             = "${var.vm_name}"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
-
   num_cpus = 1
   memory   = 1024
   guest_id = data.vsphere_virtual_machine.template.guest_id
-
   scsi_type = data.vsphere_virtual_machine.template.scsi_type
-
   network_interface {
     network_id   = data.vsphere_network.network.id
     adapter_type = data.vsphere_virtual_machine.template.network_interface_types[0]
   }
-
   disk {
     label = "disk0"
     size = 10
   }
-
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
   }

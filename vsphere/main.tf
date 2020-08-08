@@ -3,7 +3,7 @@ provider "vsphere" {
   allow_unverified_ssl = true
 }
 variable "vm_name" {
-  default = "vmware-test"
+  default = "vmware-0"
 }
 data "vsphere_datacenter" "dc" {
   name = "CMBU_ES_SCALE_VC02_ATL_DC"
@@ -32,6 +32,7 @@ resource "vsphere_virtual_machine" "cloned_virtual_machine" {
   memory   = 1024
   guest_id = data.vsphere_virtual_machine.template.guest_id
   scsi_type = data.vsphere_virtual_machine.template.scsi_type
+  wait_for_guest_net_timeout = -1
   network_interface {
     network_id   = data.vsphere_network.network.id
     adapter_type = data.vsphere_virtual_machine.template.network_interface_types[0]
@@ -39,8 +40,5 @@ resource "vsphere_virtual_machine" "cloned_virtual_machine" {
   disk {
     label = "disk0"
     size = 10
-  }
-  clone {
-    template_uuid = data.vsphere_virtual_machine.template.id
   }
 }

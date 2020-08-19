@@ -39,6 +39,6 @@ resource "vsphere_virtual_machine" "cloned_virtual_machine" {
   }
   disk {
     label = "disk0"
-    size = 10
+    size = 1
   }
 }

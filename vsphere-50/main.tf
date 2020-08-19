@@ -40,7 +40,7 @@ resource "vsphere_virtual_machine" "clone-1" {
  } 
  disk { 
   label = "disk1" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-2" { 
@@ -58,7 +58,7 @@ resource "vsphere_virtual_machine" "clone-2" {
  } 
  disk { 
   label = "disk2" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-3" { 
@@ -76,7 +76,7 @@ resource "vsphere_virtual_machine" "clone-3" {
  } 
  disk { 
   label = "disk3" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-4" { 
@@ -94,7 +94,7 @@ resource "vsphere_virtual_machine" "clone-4" {
  } 
  disk { 
   label = "disk4" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-5" { 
@@ -112,7 +112,7 @@ resource "vsphere_virtual_machine" "clone-5" {
  } 
  disk { 
   label = "disk5" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-6" { 
@@ -130,7 +130,7 @@ resource "vsphere_virtual_machine" "clone-6" {
  } 
  disk { 
   label = "disk6" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-7" { 
@@ -148,7 +148,7 @@ resource "vsphere_virtual_machine" "clone-7" {
  } 
  disk { 
   label = "disk7" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-8" { 
@@ -166,7 +166,7 @@ resource "vsphere_virtual_machine" "clone-8" {
  } 
  disk { 
   label = "disk8" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-9" { 
@@ -184,7 +184,7 @@ resource "vsphere_virtual_machine" "clone-9" {
  } 
  disk { 
   label = "disk9" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-10" { 
@@ -202,7 +202,7 @@ resource "vsphere_virtual_machine" "clone-10" {
  } 
  disk { 
   label = "disk10" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-11" { 
@@ -220,7 +220,7 @@ resource "vsphere_virtual_machine" "clone-11" {
  } 
  disk { 
   label = "disk11" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-12" { 
@@ -238,7 +238,7 @@ resource "vsphere_virtual_machine" "clone-12" {
  } 
  disk { 
   label = "disk12" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-13" { 
@@ -256,7 +256,7 @@ resource "vsphere_virtual_machine" "clone-13" {
  } 
  disk { 
   label = "disk13" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-14" { 
@@ -274,7 +274,7 @@ resource "vsphere_virtual_machine" "clone-14" {
  } 
  disk { 
   label = "disk14" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-15" { 
@@ -292,7 +292,7 @@ resource "vsphere_virtual_machine" "clone-15" {
  } 
  disk { 
   label = "disk15" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-16" { 
@@ -310,7 +310,7 @@ resource "vsphere_virtual_machine" "clone-16" {
  } 
  disk { 
   label = "disk16" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-17" { 
@@ -328,7 +328,7 @@ resource "vsphere_virtual_machine" "clone-17" {
  } 
  disk { 
   label = "disk17" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-18" { 
@@ -346,7 +346,7 @@ resource "vsphere_virtual_machine" "clone-18" {
  } 
  disk { 
   label = "disk18" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-19" { 
@@ -364,7 +364,7 @@ resource "vsphere_virtual_machine" "clone-19" {
  } 
  disk { 
   label = "disk19" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-20" { 
@@ -382,7 +382,7 @@ resource "vsphere_virtual_machine" "clone-20" {
  } 
  disk { 
   label = "disk20" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-21" { 
@@ -400,7 +400,7 @@ resource "vsphere_virtual_machine" "clone-21" {
  } 
  disk { 
   label = "disk21" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-22" { 
@@ -418,7 +418,7 @@ resource "vsphere_virtual_machine" "clone-22" {
  } 
  disk { 
   label = "disk22" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-23" { 
@@ -436,7 +436,7 @@ resource "vsphere_virtual_machine" "clone-23" {
  } 
  disk { 
   label = "disk23" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-24" { 
@@ -454,7 +454,7 @@ resource "vsphere_virtual_machine" "clone-24" {
  } 
  disk { 
   label = "disk24" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-25" { 
@@ -472,7 +472,7 @@ resource "vsphere_virtual_machine" "clone-25" {
  } 
  disk { 
   label = "disk25" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-26" { 
@@ -490,7 +490,7 @@ resource "vsphere_virtual_machine" "clone-26" {
  } 
  disk { 
   label = "disk26" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-27" { 
@@ -508,7 +508,7 @@ resource "vsphere_virtual_machine" "clone-27" {
  } 
  disk { 
   label = "disk27" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-28" { 
@@ -526,7 +526,7 @@ resource "vsphere_virtual_machine" "clone-28" {
  } 
  disk { 
   label = "disk28" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-29" { 
@@ -544,7 +544,7 @@ resource "vsphere_virtual_machine" "clone-29" {
  } 
  disk { 
   label = "disk29" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-30" { 
@@ -562,7 +562,7 @@ resource "vsphere_virtual_machine" "clone-30" {
  } 
  disk { 
   label = "disk30" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-31" { 
@@ -580,7 +580,7 @@ resource "vsphere_virtual_machine" "clone-31" {
  } 
  disk { 
   label = "disk31" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-32" { 
@@ -598,7 +598,7 @@ resource "vsphere_virtual_machine" "clone-32" {
  } 
  disk { 
   label = "disk32" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-33" { 
@@ -616,7 +616,7 @@ resource "vsphere_virtual_machine" "clone-33" {
  } 
  disk { 
   label = "disk33" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-34" { 
@@ -634,7 +634,7 @@ resource "vsphere_virtual_machine" "clone-34" {
  } 
  disk { 
   label = "disk34" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-35" { 
@@ -652,7 +652,7 @@ resource "vsphere_virtual_machine" "clone-35" {
  } 
  disk { 
   label = "disk35" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-36" { 
@@ -670,7 +670,7 @@ resource "vsphere_virtual_machine" "clone-36" {
  } 
  disk { 
   label = "disk36" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-37" { 
@@ -688,7 +688,7 @@ resource "vsphere_virtual_machine" "clone-37" {
  } 
  disk { 
   label = "disk37" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-38" { 
@@ -706,7 +706,7 @@ resource "vsphere_virtual_machine" "clone-38" {
  } 
  disk { 
   label = "disk38" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-39" { 
@@ -724,7 +724,7 @@ resource "vsphere_virtual_machine" "clone-39" {
  } 
  disk { 
   label = "disk39" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-40" { 
@@ -742,7 +742,7 @@ resource "vsphere_virtual_machine" "clone-40" {
  } 
  disk { 
   label = "disk40" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-41" { 
@@ -760,7 +760,7 @@ resource "vsphere_virtual_machine" "clone-41" {
  } 
  disk { 
   label = "disk41" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-42" { 
@@ -778,7 +778,7 @@ resource "vsphere_virtual_machine" "clone-42" {
  } 
  disk { 
   label = "disk42" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-43" { 
@@ -796,7 +796,7 @@ resource "vsphere_virtual_machine" "clone-43" {
  } 
  disk { 
   label = "disk43" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-44" { 
@@ -814,7 +814,7 @@ resource "vsphere_virtual_machine" "clone-44" {
  } 
  disk { 
   label = "disk44" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-45" { 
@@ -832,7 +832,7 @@ resource "vsphere_virtual_machine" "clone-45" {
  } 
  disk { 
   label = "disk45" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-46" { 
@@ -850,7 +850,7 @@ resource "vsphere_virtual_machine" "clone-46" {
  } 
  disk { 
   label = "disk46" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-47" { 
@@ -868,7 +868,7 @@ resource "vsphere_virtual_machine" "clone-47" {
  } 
  disk { 
   label = "disk47" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-48" { 
@@ -886,7 +886,7 @@ resource "vsphere_virtual_machine" "clone-48" {
  } 
  disk { 
   label = "disk48" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-49" { 
@@ -904,7 +904,7 @@ resource "vsphere_virtual_machine" "clone-49" {
  } 
  disk { 
   label = "disk49" 
-  size = 10 
+  size = 1 
  } 
  }
 resource "vsphere_virtual_machine" "clone-50" { 
@@ -922,6 +922,6 @@ resource "vsphere_virtual_machine" "clone-50" {
  } 
  disk { 
   label = "disk50" 
-  size = 10 
+  size = 1 
  } 
  }

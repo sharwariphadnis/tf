@@ -1,4 +1,3 @@
-
 provider "vsphere" {
   # If you have a self-signed cert
   allow_unverified_ssl = true
@@ -27,7 +26,7 @@ data "vsphere_resource_pool" "pool" {
 }
 
 data "vsphere_network" "network" {
-  name          = "cmbu_es_scale_vc01_vm_privatevlan3003"
+  name          = "pri-atl-hs1-cmbu-proxy-VMs-3003"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 

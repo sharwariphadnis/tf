@@ -1,6 +1,6 @@
 provider "vsphere" {
   # If you have a self-signed cert
-  allow_unverified_ssl = true
+  allow_unverified_ssl = false
 }
 
 variable "vm_name" {

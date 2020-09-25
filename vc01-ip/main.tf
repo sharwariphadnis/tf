@@ -5,6 +5,9 @@ provider "vsphere" {
 variable "vm_name" {
   default = "mm-test"
 }
+variable "vm_count" {
+  default = 1
+}
 data "vsphere_datacenter" "dc" {
   name = "CMBU_ES_SCALE_VC01_ATL_DC"
 }
@@ -25,7 +28,8 @@ data "vsphere_virtual_machine" "template" {
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 resource "vsphere_virtual_machine" "cloned_virtual_machine" {
-  name             = var.vm_name
+  count            = var.vm_count
+  name             = "${var.vm_name}-${count.index}"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
   num_cpus = 1

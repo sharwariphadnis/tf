@@ -24,7 +24,7 @@ data "vsphere_network" "network" {
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 data "vsphere_virtual_machine" "template" {
-  name          = "tiny-photon-scale"
+  name          = "WebTinyCentOS65x86"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 resource "vsphere_virtual_machine" "cloned_virtual_machine" {

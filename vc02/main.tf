@@ -43,7 +43,6 @@ resource "vsphere_virtual_machine" "clone" {
   num_cpus = 1
   memory   = 128
   guest_id = data.vsphere_virtual_machine.template.guest_id 
-  scsi_type = data.vsphere_virtual_machine.template.scsi_type 
   wait_for_guest_net_timeout = -1 
   network_interface { 
     network_id   = data.vsphere_network.network.id 

@@ -38,6 +38,10 @@ resource "vsphere_virtual_machine" "cloned_virtual_machine" {
     label = "disk0"
     size = 1
   }
+  timeouts {
+    create = "3h"
+    delete = "3h"
+  }
   guest_id = data.vsphere_virtual_machine.template.guest_id
   scsi_type = data.vsphere_virtual_machine.template.scsi_type
   network_interface {

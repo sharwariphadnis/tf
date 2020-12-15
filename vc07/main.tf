@@ -21,7 +21,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_resource_pool" "pool" {
-  name          = "CMBU_ES_SCALE_VC03_ATL_CLUSTER_01/Resources"
+  name          = "CMBU_ES_SCALE_VC07_ATL_CLUSTER_01/Resources"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 

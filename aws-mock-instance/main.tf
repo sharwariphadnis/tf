@@ -1,6 +1,6 @@
 provider "aws" {
-  secret_key = "aws-mock-secertkey-prelude-1a12046d-3d1b-4596-8bd9-0e3a76397c54"
-  access_key = "aws-mock-accessid-prelude-1a12046d-3d1b-4596-8bd9-0e3a76397c54"
+  secret_key = "aws-mock-secertkey-prelude-1b7086ed-48ce-450e-a0ab-81f83b0b6f9a"
+  access_key = "aws-mock-accessid-prelude-1b7086ed-48ce-450e-a0ab-81f83b0b6f9a"
   region = "us-east-1"
   skip_credentials_validation = true
   skip_metadata_api_check     = true

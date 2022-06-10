@@ -13,7 +13,7 @@ provider "aws" {
     ec2 = "http://ad3554453643e4883a0734ef30ece6ce-532856250.us-west-2.elb.amazonaws.com/aws-mock/ec2-endpoint/"
   }
 }
-resource "aws_instance" "machine1" {
+resource "aws_instance" "machine3" {
   ami = "ami-04b9e92b5572fa0d1"
   instance_type = "t2.micro"
 }

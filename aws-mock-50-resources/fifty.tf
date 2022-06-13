@@ -1,6 +1,6 @@
 provider "aws" {
- secret_key = "aws-mock-secertkey000"
- access_key = "aws-mock-accessid-scaleperf-99877470-0586-46a2-aa77-41de4b0e7101"
+ secret_key = "aws-mock-secertkey-prelude-1b7086ed-48ce-450e-a0ab-81f83b0b6f9a"
+  access_key = "aws-mock-accessid-prelude-1b7086ed-48ce-450e-a0ab-81f83b0b6f9a"
  region = "us-east-1"
  skip_credentials_validation = true
  skip_metadata_api_check = true
@@ -10,7 +10,7 @@ provider "aws" {
  skip_region_validation = true
  skip_get_ec2_platforms = true
  endpoints {
- ec2 = "http://a2fc46b2ee77811e88434120e0ad2754-799062602.us-east-1.elb.amazonaws.com/aws-mock/ec2-endpoint/"
+ ec2 = "http://ad3554453643e4883a0734ef30ece6ce-532856250.us-west-2.elb.amazonaws.com/aws-mock/ec2-endpoint/"
  }
 }
 resource "aws_instance" "machine1" {

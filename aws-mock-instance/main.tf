@@ -19,10 +19,10 @@ provider "aws" {
   skip_region_validation = true
   skip_get_ec2_platforms = true
   endpoints {
-    ec2 = "http://ad3554453643e4883a0734ef30ece6ce-532856250.us-west-2.elb.amazonaws.com/aws-mock/ec2-endpoint/"
+    ec2 = "http://ae0eef542a41b4ffaa3aa0062f5f8b5b-1294899510.us-west-2.elb.amazonaws.com/aws-mock/ec2-endpoint/"
   }
 }
 resource "aws_instance" "machine3" {
-  ami = "ami-12345678"
-  instance_type = "t2.micro"
+  ami = "ami-00abcdef"
+  instance_type = "t1.micro"
 }
